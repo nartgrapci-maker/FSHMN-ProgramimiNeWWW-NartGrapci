@@ -1,9 +1,8 @@
 # Java I — Pasaporta digjitale dhe GitHub
 
-## Çfarë realizova
+## Qka Krijova
 
-Krijova një "pasaportë digjitale" për një personazh të sajuar, Arta
-Krasniqi, kandidate si udhërrëfyese e kampusit. Struktura përfshin:
+Krijova një "pasaportë digjitale" për një personazh të sajuar, Nart Grapci, kandidate si udhërrëfyese e kampusit. Struktura përfshin:
 
 - `index.html` — faqja kryesore: `lang="sq"`, `charset`, `viewport`,
   titull, një `h1`, prezantim dhe listë me 3 aftësi ("vula" pasaporte).
