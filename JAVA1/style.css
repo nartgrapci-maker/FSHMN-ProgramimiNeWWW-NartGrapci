@@ -1,0 +1,176 @@
+/* Pasaporta digjitale — tema e pasaportës */
+
+:root {
+  --cover: #1b2a4a;
+  --cover-dark: #142038;
+  --page: #f5f0e6;
+  --page-line: #d9cfb8;
+  --brass: #a67c3d;
+  --stamp: #a63d40;
+  --ink: #262220;
+  --ink-soft: #524b42;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  background: var(--cover);
+  color: var(--ink);
+  line-height: 1.55;
+}
+
+.skip {
+  position: absolute;
+  left: -999px;
+  top: auto;
+}
+.skip:focus {
+  left: 1rem;
+  top: 1rem;
+  background: var(--brass);
+  color: var(--cover-dark);
+  padding: 0.5rem 1rem;
+  z-index: 10;
+  font-family: system-ui, sans-serif;
+  border-radius: 3px;
+}
+
+header {
+  padding: 2.5rem 1.5rem 3rem;
+  text-align: center;
+  color: #f5f0e6;
+}
+
+header p.kicker {
+  font-family: system-ui, sans-serif;
+  letter-spacing: 0.04em;
+  color: var(--brass);
+  margin: 0 0 0.75rem;
+  font-size: 0.85rem;
+}
+
+header h1 {
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  margin: 0;
+  font-weight: 400;
+  border: 1px solid var(--brass);
+  display: inline-block;
+  padding: 1rem 1.75rem;
+  border-radius: 4px;
+}
+
+main {
+  max-width: 640px;
+  margin: -1.5rem auto 0;
+  background: var(--page);
+  border-radius: 10px 10px 0 0;
+  padding: 2.5rem 1.75rem 3rem;
+  box-shadow: 0 -8px 24px rgba(0, 0, 0, 0.25);
+  min-height: 40vh;
+}
+
+main h2 {
+  font-weight: 400;
+  font-size: 1.4rem;
+  border-bottom: 1px dashed var(--page-line);
+  padding-bottom: 0.6rem;
+}
+
+main p {
+  color: var(--ink-soft);
+  max-width: 62ch;
+}
+
+.stamps {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.stamps li {
+  font-family: system-ui, sans-serif;
+  font-size: 0.85rem;
+  border: 2px solid var(--stamp);
+  color: var(--stamp);
+  border-radius: 50%;
+  width: 8.5rem;
+  height: 8.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0.75rem;
+  transform: rotate(-3deg);
+}
+
+.stamps li:nth-child(2) {
+  transform: rotate(2deg);
+}
+.stamps li:nth-child(3) {
+  transform: rotate(-1deg);
+}
+
+nav.wayfinder {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px dashed var(--page-line);
+  font-family: system-ui, sans-serif;
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+nav.wayfinder a {
+  color: var(--cover);
+  text-decoration: none;
+  font-weight: 600;
+  border-bottom: 2px solid var(--brass);
+  padding-bottom: 0.1rem;
+}
+
+nav.wayfinder a:hover,
+nav.wayfinder a:focus-visible {
+  color: var(--stamp);
+  border-bottom-color: var(--stamp);
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--brass);
+  outline-offset: 2px;
+}
+
+.entry {
+  font-family: system-ui, sans-serif;
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+  border: 1px dashed var(--page-line);
+  padding: 0.75rem 1rem;
+  border-radius: 4px;
+  margin-top: 1.5rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  font-family: system-ui, sans-serif;
+  font-size: 0.8rem;
+  color: var(--brass);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
