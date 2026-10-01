@@ -1,0 +1,99 @@
+/* Zgjidhje reference: Muzeu i sendeve */
+:root {
+  --ink: #172033;
+  --bg: #f3f6fb;
+  --line: #cfd8e6;
+  --accent: #0f766e;
+  --link: #176ca4;
+  --pad: 1.35rem;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: system-ui, sans-serif;
+  margin: 0;
+  background: var(--bg);
+  color: #111;
+  line-height: 1.5;
+}
+
+/* Lidhja "Kalo te përmbajtja": e dukshme vetëm me fokus nga tastiera */
+.skip {
+  position: absolute;
+  left: -999px;
+  top: 0;
+  background: #fff;
+  padding: 0.5rem 1rem;
+}
+.skip:focus {
+  left: 1rem;
+  top: 1rem;
+  z-index: 10;
+}
+
+header {
+  padding: 1rem var(--pad) 1.4rem;
+  margin-right: 3rem;
+  border-bottom: 3px solid var(--accent);
+}
+header p {
+  margin: 0 0 0.9rem;
+}
+h1,
+h2 {
+  color: var(--ink);
+}
+h1 {
+  margin: 0;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+nav {
+  padding: 1.5rem var(--pad) 0;
+}
+nav a {
+  color: var(--link);
+  margin-right: 1rem;
+}
+nav a:focus-visible,
+summary:focus-visible {
+  outline: 3px solid var(--link);
+  outline-offset: 2px;
+}
+
+main {
+  padding: 0 var(--pad);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr));
+  gap: 1rem;
+  max-width: 65rem;
+  margin: 1.2rem 0 3rem;
+}
+.card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 1rem;
+}
+.card h2 {
+  margin: 1.2rem 0 0.6rem;
+}
+.card img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  background: #f1f3f7;
+}
+summary {
+  cursor: pointer;
+  margin-top: 0.8rem;
+}
+
+footer {
+  padding: 1rem var(--pad) 1.5rem;
+}
