@@ -1,0 +1,17 @@
+/* DIAGNOZA
+   1) Konflikt specifikeje: #poster (id = 1,0,0) fiton ndaj .poster (klasë = 0,1,0),
+      pavarësisht renditjes. Rezultati: color white mbi background white (e palexueshme),
+      ndërsa color #17263c nga .poster humbet.
+   2) Overflow: width 700px + padding 80px. Në 360px ekran paneli del jashtë faqes.
+   RREGULLIMI pa !important: një selektor i vetëm me specifikë të ulët (klasë),
+   ngjyra të qarta, max-width në vend të width fiks, padding fluid. */
+.poster {
+  color: var(--ink);
+  background: var(--surface);
+  width: 100%;
+  max-width: 700px;
+  margin-inline: auto;
+  padding: clamp(1rem, 5vw, 80px);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}

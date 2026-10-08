@@ -1,0 +1,81 @@
+:root {
+  --ink: #17263c;
+  --bg: #f3f6fb;
+  --surface: #ffffff;
+  --accent: #0f6b5e;
+  --border: #d5dbe6;
+  --space: 1rem;
+  --radius: 0.75rem;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: system-ui, sans-serif;
+  margin: 0;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.5;
+}
+.site-header {
+  padding: var(--space) calc(var(--space) * 1.5);
+  border-bottom: 3px solid var(--accent);
+}
+main {
+  padding: calc(var(--space) * 2) var(--space);
+}
+footer {
+  padding: var(--space) calc(var(--space) * 1.5);
+}
+.skip {
+  position: absolute;
+  left: -999px;
+}
+.skip:focus-visible {
+  left: var(--space);
+  top: var(--space);
+  background: var(--surface);
+  padding: 0.5rem 1rem;
+}
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  margin: 0 0 var(--space);
+  padding: 0;
+}
+.tag {
+  border: 2px solid var(--accent);
+  border-radius: 999px;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.9rem;
+}
+/* Dallim pa ngjyrë: stil kufiri + simbol, jo vetëm ngjyra */
+.tag--limited {
+  border-style: dashed;
+}
+.tag--limited::before {
+  content: "⚠ ";
+}
+.tag--online::before {
+  content: "🌐 ";
+}
+.tag--free::before {
+  content: "✓ ";
+}
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1rem;
+  border-radius: 0.4rem;
+  background: var(--accent);
+  color: #fff;
+}
+.btn:hover {
+  background: #0b5248;
+}
+a:focus-visible,
+.btn:focus-visible {
+  outline: 3px solid #f2a900;
+  outline-offset: 3px;
+}
