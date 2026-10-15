@@ -1,0 +1,22 @@
+body { font-family: system-ui, sans-serif; margin: 1rem; }
+* { box-sizing: border-box; }
+.offers
+ { display:grid;
+    width: 100%;
+    padding: 2rem;
+    border: 2px solid navy;
+    gap: 1rem;
+    grid-template-rows: 1fr;}
+
+.offers article{
+    overflow-wrap: anywhere;
+}
+
+:focus-visible { outline: 3px solid navy; outline-offset: 3px; }
+
+@media (min-width: 800px) {
+    .offers{
+       grid-template-rows: 1fr;
+       grid-template-columns: 1fr 1fr;
+    }
+}
