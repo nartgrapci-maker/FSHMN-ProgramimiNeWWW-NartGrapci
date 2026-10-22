@@ -30,4 +30,4 @@ Flexbox e zgjedh kur elementet renditen në një drejtim (një rresht ose një k
 
 ## Deklarimi i AI/burimeve
 
-Kodi dhe README u përgatitën me ndihmën e Claude (Anthropic). Imazhi `assets/festival.svg` është një ilustrim i thjeshtë i krijuar për këtë ushtrim. Referenca: kap. 6–7 të librit të lëndës.
+Tek Kodi dhe README ka ndihmuar Claude (Anthropic). Imazhi `assets/festival.svg` është një ilustrim i thjeshtë i krijuar për këtë ushtrim. Referenca: kap. 6–7 të librit të lëndës.
