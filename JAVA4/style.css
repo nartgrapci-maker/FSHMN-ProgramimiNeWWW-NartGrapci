@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: system-ui, sans-serif;
+  margin: 1rem;
+}
+.skip {
+  position: absolute;
+  left: -999px;
+}
+.skip:focus {
+  left: 1rem;
+}
+a:focus-visible {
+  outline: 3px solid blue;
+}
+
+/* Menu: Flexbox */
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  padding: 0;
+}
+
+/* Kartat: Grid, 1 / 2 / 3 kolona */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+@media (min-width: 600px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.card {
+  min-width: 0;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  overflow-wrap: anywhere;
+}
+.card img {
+  max-width: 100%;
+  height: auto;
+}
