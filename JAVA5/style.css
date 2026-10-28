@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  margin: 0 auto;
+  max-width: 70rem;
+  padding: 1rem 1.5rem;
+  background: #f3f6fb;
+  color: #1a2433;
+  line-height: 1.5;
+}
+
+.skip {
+  position: absolute;
+  left: -999px;
+}
+.skip:focus {
+  left: 1rem;
+  top: 1rem;
+  background: #fff;
+  padding: 0.5rem;
+}
+
+header {
+  border-bottom: 3px solid #1f6b62;
+  margin-bottom: 1.5rem;
+  padding: 0 1.5rem;
+}
+
+main {
+  padding: 0 1.5rem;
+}
+
+.fusha {
+  margin-bottom: 1rem;
+}
+
+.fusha label {
+  display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+  font: inherit;
+  width: 12.5rem;
+  max-width: 100%;
+  padding: 0.6rem 0.5rem;
+  border: 1px solid #7d8a9c;
+  border-radius: 4px;
+  background: #fff;
+}
+
+input.i-vogel {
+  width: 4.7rem;
+}
+
+input:focus-visible,
+button:focus-visible {
+  outline: 3px solid #f0b429;
+  outline-offset: 2px;
+}
+
+fieldset {
+  border: 1px solid #a3b1c2;
+  margin: 0 0 1rem;
+  padding: 0.25rem 1rem 0.5rem;
+}
+
+.opsion {
+  margin: 0.6rem 0;
+}
+
+button {
+  font: inherit;
+  margin: 0.5rem 0 1rem;
+  padding: 0.7rem 1rem;
+  border: 0;
+  border-radius: 6px;
+  background: #126e62;
+  color: #fff;
+  cursor: pointer;
+}
+button:hover {
+  background: #0d564c;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+}
+
+th,
+td {
+  border: 1px solid #a3b1c2;
+  padding: 0.6rem;
+  text-align: left;
+}
+
+footer {
+  font-size: 0.9rem;
+  color: #4b5668;
+  padding: 0 1.5rem;
+}
