@@ -1,0 +1,18 @@
+/* Shkruaj stilin tënd. */
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: system-ui, sans-serif;
+  margin: 1rem;
+}
+label {
+  display: block;
+}
+.skip {
+  position: absolute;
+  left: -999px;
+}
+.skip:focus {
+  left: 1rem;
+}
